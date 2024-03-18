@@ -13,6 +13,7 @@
     --davys-gray: hsla(240, 5%, 36%, 1);
     --davys-black: hsla(240, 5%, 10%, 1);
     --xanthous: hsla(39, 100%, 64%, 1);
+    --xanthous--dark: hsla(39, 100%, 75%, 1);
     --header-height: 3rem;
 
     /*========== Colors ==========*/
@@ -321,7 +322,7 @@ img {
 }
 
 .home__blob-img {
-    width: 300px;
+    width: 200px;
     border-radius: 50%;
 }
 
@@ -438,7 +439,7 @@ img {
 
 /*==================== ABOUT ====================*/
 .about__img {
-    width: 200px;
+    width: 300px;
     border-radius: 0.5rem;
     justify-self: center;
     align-self: center;
@@ -456,7 +457,7 @@ img {
 }
 
 .about__info-title {
-    font-size: var(--h2-font-size);
+    font-size: var(--h1-font-size);
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
@@ -813,8 +814,11 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button:hover .button__icon {
-    transform: translateX(0.25rem);
+.portfolio__button{
+    background-color: var(--xanthous)
+}
+.portfolio__button:hover {
+    background-color: var(--xanthous--dark)
 }
 
 .swiper-button-prev::after,
