@@ -66,6 +66,10 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    --display-dark: none;
+    --display-light: block;
+
 }
 
 /* Font size for large devices */
@@ -97,6 +101,8 @@ body.dark-theme {
     --first-color-lighter: var(--nyanza);
     --text-color-light: var(--nyanza);
     --button-text: #000;
+    --display-dark: block;
+    --display-light: none;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -322,9 +328,20 @@ img {
 }
 
 .home__blob-img {
-    width: 200px;
+    width: 230px;
     border-radius: 50%;
 }
+
+
+.dark-mode-img {
+    display: var(--display-dark);
+}
+
+
+.light-mode-img {
+    display: var(--display-light);
+}
+
 
 .home__blob-img-tile {
     width: 100px;
@@ -814,9 +831,10 @@ img {
     margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button{
+.portfolio__button {
     background-color: var(--xanthous)
 }
+
 .portfolio__button:hover {
     background-color: var(--xanthous--dark)
 }
