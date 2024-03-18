@@ -20,9 +20,3 @@ Support our mission through donations, collaboration, or by contributing to our 
 
 - **Email:** [TODO](mailto:TODO)
 - **GitHub:** [github.com/FawnRescue](https://github.com/FawnRescue)
-
-## License
-
-The content and source code for the website are available under the MIT License. See the LICENSE file in the repository for more details.
-
-Thank you for your interest in supporting wildlife conservation through technology.
