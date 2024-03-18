@@ -355,6 +355,7 @@ img {
 
 .home__title {
     font-size: var(--big-font-size);
+    text-align: center;
 }
 
 .home__subtitle {
@@ -362,6 +363,7 @@ img {
     color: var(--text-color);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-0-75);
+    text-align: center;
 }
 
 .home__discription {
@@ -1106,6 +1108,12 @@ img {
     .home__content {
         grid-template-columns: 0.25fr 3fr;
     }
+    .home__title {
+        text-align: center;
+    }
+    .home__subtitle {
+        text-align: center;
+    }
 
     .home__blob {
         width: 180px;
@@ -1151,10 +1159,16 @@ img {
     .testimonial__description {
         text-align: center;
     }
+    .home__title {
+        text-align: center;
+    }
+    .home__subtitle {
+        text-align: center;
+    }
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 568px){
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
     }
