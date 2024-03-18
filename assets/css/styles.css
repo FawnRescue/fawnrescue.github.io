@@ -20,9 +20,9 @@
     /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: var(--pistachio);
+    --first-color: var(--pistachio-dark);
     --first-color-second: var(--nyanza);
-    --first-color-alt: var(--pistachio-dark);
+    --first-color-alt: var(--pistachio);
     --first-color-lighter: var(--nyanza);
     --title-color: var(--davys-black);
     --text-color: var(--davys-gray);
