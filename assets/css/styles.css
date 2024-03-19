@@ -13,7 +13,8 @@
     --davys-gray: hsla(240, 5%, 36%, 1);
     --davys-black: hsla(240, 5%, 10%, 1);
     --xanthous: hsla(39, 100%, 64%, 1);
-    --xanthous--dark: hsla(39, 100%, 75%, 1);
+    --xanthous--light: hsla(39, 100%, 75%, 1);
+    --xanthous--dark: hsla(39, 100%, 50%, 1);
     --header-height: 3rem;
 
     /*========== Colors ==========*/
@@ -68,7 +69,9 @@
     --z-modal: 1000;
 
     --display-dark: none;
+    --display-dark-inline: none;
     --display-light: block;
+    --display-light-inline: inline;
 
 }
 
@@ -102,7 +105,9 @@ body.dark-theme {
     --text-color-light: var(--nyanza);
     --button-text: #000;
     --display-dark: block;
+    --display-dark-inline: inline;
     --display-light: none;
+    --display-light-inline: none;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -340,6 +345,16 @@ img {
 
 .light-mode-img {
     display: var(--display-light);
+}
+
+.light-mode-accent-text {
+    display: var(--display-light-inline);
+    color: var(--xanthous--dark);
+}
+
+.dark-mode-accent-text {
+    display: var(--display-dark-inline);
+    color: var(--xanthous);
 }
 
 
@@ -666,8 +681,16 @@ img {
     column-gap: 1.5rem;
 }
 
-.qualification__title {
+.qualification__title__dark {
+    display: var(--display-dark);
     color: var(--xanthous);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.qualification__title__light {
+    display: var(--display-light);
+    color: var(--xanthous--dark);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
@@ -845,7 +868,7 @@ img {
 }
 
 .portfolio__button:hover {
-    background-color: var(--xanthous--dark)
+    background-color: var(--xanthous--light)
 }
 
 .swiper-button-prev::after,
@@ -1115,9 +1138,11 @@ img {
     .home__content {
         grid-template-columns: 0.25fr 3fr;
     }
+
     .home__title {
         text-align: center;
     }
+
     .home__subtitle {
         text-align: center;
     }
@@ -1166,16 +1191,18 @@ img {
     .testimonial__description {
         text-align: center;
     }
+
     .home__title {
         text-align: center;
     }
+
     .home__subtitle {
         text-align: center;
     }
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 568px) {
     .home__content {
         grid-template-columns: max-content 1fr 1fr;
     }
