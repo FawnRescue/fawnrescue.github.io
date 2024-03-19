@@ -667,9 +667,16 @@ img {
 }
 
 .qualification__title {
+    color: var(--xanthous);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
+
+.qualification__title_future {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
 
 .qualification__subtitle {
     display: inline-block;
